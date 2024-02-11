@@ -12,7 +12,7 @@ const [massage,setMassage]=useState("");
 
   const submit=async(e)=>{
     e.preventDefault();
-    const res=await fetch('http://localhost:4000/contact',{
+    const res=await fetch('https://test-backend-livid.vercel.app/contact',{
   
       //rrules to write
       method:"POST",
