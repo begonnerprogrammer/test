@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin:["https://test-front-end-liart.vercel.app"],
+    origin:["https://test-front-end-jet.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 }))
