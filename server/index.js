@@ -10,14 +10,15 @@ const cookieParser = require("cookie-parser");
 const { useState } = require("react");
 const router=require("./src/router/route")
 const PostModel =require("./src/schema/postmodel")
-app.use(express.json());
-app.use(cookieParser());
-
 app.use(cors({
     origin:["https://test-front-end-jet.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 }))
+
+app.use(express.json());
+app.use(cookieParser());
+
 
 //To use images from public folder
 app.use(express.static('Public'))
