@@ -10,6 +10,7 @@ const cookieParser = require("cookie-parser");
 const { useState } = require("react");
 const router=require("./src/router/route")
 const PostModel =require("./src/schema/postmodel")
+app.use(cors())
 app.use(cors({
     origin:["https://test-front-end-jet.vercel.app"],
     methods:["POST","GET"],
