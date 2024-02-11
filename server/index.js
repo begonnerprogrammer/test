@@ -12,11 +12,7 @@ const router=require("./src/router/route")
 const PostModel =require("./src/schema/postmodel")
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
-    origin:["https://deploy-mern-1whq.vercel.app"],
-    methods:["POST","GET","CREATE","DELETE"],
-    credentials:true
-}))
+app.use(cors())
 
 //To use images from public folder
 app.use(express.static('Public'))
